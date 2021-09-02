@@ -1,8 +1,8 @@
 /*
  * @Descripttion:
- * @Author: Lijia Lin
+ * @Author: Bugmakerrrr
  * @Date: 2021-09-01 10:38:58
- * @LastEditTime: 2021-09-01 11:06:53
+ * @LastEditTime: 2021-09-01 20:43:23
  */
 const path = require('path');
 const resolve = (dir) => path.join(__dirname, dir);

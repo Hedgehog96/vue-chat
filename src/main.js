@@ -1,8 +1,8 @@
 /*
  * @Descripttion:
- * @Author: Lijia Lin
+ * @Author: Bugmakerrrr
  * @Date: 2021-09-01 10:35:03
- * @LastEditTime: 2021-09-01 13:37:23
+ * @LastEditTime: 2021-09-01 20:43:35
  */
 import Vue from 'vue';
 import App from './App.vue';

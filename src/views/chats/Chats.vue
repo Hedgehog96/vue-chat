@@ -1,8 +1,8 @@
 <!--
  * @Descripttion: 
- * @Author: Lijia Lin
+ * @Author: Bugmakerrrr
  * @Date: 2021-09-01 10:46:14
- * @LastEditTime: 2021-09-01 11:07:42
+ * @LastEditTime: 2021-09-01 20:44:12
 -->
 <template>
   <div class="charts">charts</div>

@@ -1,8 +1,8 @@
 /*
  * @Descripttion:
- * @Author: Lijia Lin
+ * @Author: Bugmakerrrr
  * @Date: 2021-09-01 10:35:03
- * @LastEditTime: 2021-09-01 14:02:28
+ * @LastEditTime: 2021-09-01 20:43:51
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
