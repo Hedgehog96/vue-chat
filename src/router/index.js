@@ -2,7 +2,7 @@
  * @Descripttion:
  * @Author: Bugmakerrrr
  * @Date: 2021-09-01 10:35:03
- * @LastEditTime: 2021-09-01 20:43:51
+ * @LastEditTime: 2021-10-07 17:40:19
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -15,6 +15,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login,
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('views/register/Register.vue'),
   },
   {
     path: '/friends',
@@ -30,7 +35,9 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  if (to.name !== 'Login' && !window.localStorage.getItem('isAuthenticated'))
+  if (to.name === 'Register') {
+    next();
+  } else if (to.name !== 'Login' && !window.localStorage.getItem('isAuthenticated'))
     next({ name: 'Login' });
   else next();
 });

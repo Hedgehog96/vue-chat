@@ -1,8 +1,8 @@
 <!--
- * @Descripttion: 
+ * @Descripttion: 登录页
  * @Author: Bugmakerrrr
  * @Date: 2021-09-01 13:43:20
- * @LastEditTime: 2021-09-01 20:44:20
+ * @LastEditTime: 2021-10-17 22:38:18
 -->
 <template>
   <div class="login">
@@ -12,6 +12,7 @@
       <van-form @submit="handleSubmit" autocomplete="off">
         <van-field
           v-model="username"
+          type="tel"
           name="username"
           label="账号"
           :rules="[{ required: true, message: '请填写账号' }]"
@@ -27,6 +28,9 @@
           <van-button round block type="info" native-type="submit">登录</van-button>
         </div>
       </van-form>
+    </div>
+    <div class="register">
+      <router-link :to="{ name: 'Register' }"><span>注册</span></router-link>
     </div>
   </div>
 </template>
@@ -67,7 +71,6 @@ export default {
   background: linear-gradient(to bottom, #be93c5, #7bc6cc);
 
   .logo {
-    top: 50px;
     width: 128px;
     height: 128px;
     background: url('~assets/images/logo.svg') no-repeat;
@@ -92,6 +95,15 @@ export default {
 
     input:focus {
       background-color: transparent;
+    }
+  }
+
+  .register {
+    margin-left: 170px;
+    font-size: 14px;
+
+    a {
+      color: #1989fa;
     }
   }
 }
