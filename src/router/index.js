@@ -2,7 +2,7 @@
  * @Descripttion:
  * @Author: Bugmakerrrr
  * @Date: 2021-09-01 10:35:03
- * @LastEditTime: 2021-10-07 17:40:19
+ * @LastEditTime: 2021-11-01 10:55:44
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -22,9 +22,14 @@ const routes = [
     component: () => import('views/register/Register.vue'),
   },
   {
-    path: '/friends',
-    name: 'Friends',
-    component: () => import('views/friends/Friends.vue'),
+    path: '/chats',
+    name: 'Chats',
+    component: () => import('views/home/chats/Chats.vue'),
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('views/home/contact/Contact.vue'),
   },
 ];
 
